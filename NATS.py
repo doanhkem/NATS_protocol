@@ -3,8 +3,10 @@ import json
 import time
 from nats.aio.client import Client as NATS
 from pymodbus.client.sync import ModbusTcpClient
+import os
 
 CONFIG_FILE = "config.json"
+seed_path = os.path.join(os.path.dirname(__file__), 'a.nkey')
 
 def read_modbus(ip, port, addr, funccode, offset, startreg, numregs):
     client = ModbusTcpClient(ip, port=port, timeout=10)
@@ -39,7 +41,7 @@ async def run():
     nc = NATS()
     await nc.connect(
         servers=["nats://113.164.234.227:4222"],
-        nkeys_seed="a.nkey",
+        nkeys_seed=seed_path,
         error_cb=error_cb
     )
 
