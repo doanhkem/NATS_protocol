@@ -1,0 +1,32 @@
+[
+  {
+    "serial": "HV2160135605",
+    "pvid": "HV2160135605",
+    "ip": "127.0.0.1",
+    "port": 502,
+    "modbus_addr": 1,
+    "modbus_groups": [
+      { "name": "MODBUS1", "start": 30000, "count": 25, "funccode": 3, "offset": 0 },
+      { "name": "MODBUS2", "start": 30071, "count": 12, "funccode": 3, "offset": 0 },
+      { "name": "MODBUS3", "start": 32000, "count": 60, "funccode": 3, "offset": 0 },
+      { "name": "MODBUS4", "start": 32060, "count": 60, "funccode": 3, "offset": 0 },
+      { "name": "MODBUS5", "start": 37100, "count": 39, "funccode": 3, "offset": 0 },
+      { "name": "MODBUS6", "start": 40000, "count": 2, "funccode": 3, "offset": 0 }
+    ]
+  },
+  {
+    "serial": "HV102160200654",
+    "pvid": "HV102160200654",
+    "ip": "127.0.0.1",
+    "port": 502,
+    "modbus_addr": 2,
+    "modbus_groups": [
+      { "name": "MODBUS1", "start": 30000, "count": 25, "funccode": 3, "offset": 0 },
+      { "name": "MODBUS2", "start": 30071, "count": 12, "funccode": 3, "offset": 0 },
+      { "name": "MODBUS3", "start": 32000, "count": 60, "funccode": 3, "offset": 0 },
+      { "name": "MODBUS4", "start": 32060, "count": 60, "funccode": 3, "offset": 0 },
+      { "name": "MODBUS5", "start": 37100, "count": 39, "funccode": 3, "offset": 0 },
+      { "name": "MODBUS6", "start": 40000, "count": 2, "funccode": 3, "offset": 0 }
+    ]
+  }
+]
